@@ -1,10 +1,7 @@
 import style from '../styles/PotCard.module.css'
 import truncateEthAddress from 'truncate-eth-address'
 import { useAppContext } from '../context/context'
-const PotCard = () => {
-  const { lotteryId, lastWinner, lotteryPot, enterLottery, pickWinner } =
-    useAppContext()
-
+const PotCard = () => { const { lotteryId, lastWinner, lotteryPot, enterLottery, pickWinner } = useAppContext()
   return (
     <div className={style.wrapper}>
       <div className={style.title}>
